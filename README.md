@@ -92,4 +92,19 @@ SELECT MIN(column_name)
 FROM table_name
 WHERE condition;
 ```
+3. COUNT: The COUNT() function returns the number of rows that matches a specified criterion.
+4. AVG: The AVG() function returns the average value of a numeric column. 
+5. SUM: The SUM() function returns the total sum of a numeric column. 
+```sql
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
 
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+```
