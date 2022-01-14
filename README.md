@@ -145,3 +145,9 @@ SELECT column1, column2, ...
 FROM table_name
 ORDER BY column1, column2, ... ASC|DESC;
 ```
+
+EXAMPLE: The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:
+```sql
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+```
