@@ -151,3 +151,9 @@ EXAMPLE: The following SQL statement selects all customers from the "Customers" 
 SELECT * FROM Customers
 ORDER BY Country, CustomerName;
 ```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `GROUP BY`
+The GROUP BY Statement in SQL is used to arrange identical data into groups with the help of some functions. i.e if a particular column has same values in different rows then it will arrange these rows in a group.
+* GROUP BY clause is used with the SELECT statement.
+* In the query, GROUP BY clause is placed after the WHERE clause.
+* In the query, GROUP BY clause is placed before ORDER BY clause if used any.
