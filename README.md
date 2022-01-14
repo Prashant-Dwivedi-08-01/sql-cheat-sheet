@@ -79,3 +79,17 @@ WHERE NOT condition;
 SELECT name FROM t2
 WHERE age BETWEEN 20 AND 39 AND name ="Prashant"
 ```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `AGGREGATE FUNCTIONS`
+1. MAX: The MAX() function returns the largest value of the selected column.
+2. MIN: The MIN() function returns the smallest value of the selected column.
+```sql
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+```
+
