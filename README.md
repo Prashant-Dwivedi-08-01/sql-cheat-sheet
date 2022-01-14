@@ -27,3 +27,10 @@ WHERE condition;
 Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. 
 The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, 
 all records in the table will be updated!
+
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `INSERT INOT (DML)`
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+
