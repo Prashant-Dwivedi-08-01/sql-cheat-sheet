@@ -73,3 +73,9 @@ SELECT column1, column2, ...
 FROM table_name
 WHERE NOT condition;
 ```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `BETWEEN`
+```sql
+SELECT name FROM t2
+WHERE age BETWEEN 20 AND 39 AND name ="Prashant"
+```
