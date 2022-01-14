@@ -126,4 +126,12 @@ SELECT name FROM t2
 WHERE name LIKE "Pr_%ant";
 ```
 
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `LIMIT`
+The LIMIT clause is used to specify the number of records to return.
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+```
 
