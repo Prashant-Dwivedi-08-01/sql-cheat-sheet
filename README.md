@@ -37,3 +37,12 @@ VALUES (value1, value2, value3, ...);
 ```sql
 DELETE FROM table_name WHERE condition;
 ```
+
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `SELECT DISTINCT (DML)`
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+```sql
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+```
