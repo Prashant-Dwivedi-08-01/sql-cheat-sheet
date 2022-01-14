@@ -33,4 +33,7 @@ all records in the table will be updated!
 INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 ```
-
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `DELETE FROM (DML)`
+```sql
+DELETE FROM table_name WHERE condition;
+```
