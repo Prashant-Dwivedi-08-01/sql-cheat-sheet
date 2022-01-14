@@ -81,6 +81,7 @@ WHERE age BETWEEN 20 AND 39 AND name ="Prashant"
 ```
 
 ## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `AGGREGATE FUNCTIONS`
+
 1. MAX: The MAX() function returns the largest value of the selected column.
 2. MIN: The MIN() function returns the smallest value of the selected column.
 ```sql
@@ -108,3 +109,15 @@ SELECT SUM(column_name)
 FROM table_name
 WHERE condition;
 ```
+
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `LIKE Operator`
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+There are two wildcards often used in conjunction with the LIKE operator:
+
+* The percent sign (%) represents zero, one, or multiple characters
+* The underscore sign (_) represents one, single character
+<img src ="https://user-images.githubusercontent.com/63506466/149466976-b347fe90-fd5d-4957-97a0-66249b6d3172.png" width="700">
+
+
