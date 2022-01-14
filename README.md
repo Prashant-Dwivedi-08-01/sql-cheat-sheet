@@ -120,4 +120,10 @@ There are two wildcards often used in conjunction with the LIKE operator:
 * The underscore sign (_) represents one, single character
 <img src ="https://user-images.githubusercontent.com/63506466/149466976-b347fe90-fd5d-4957-97a0-66249b6d3172.png" width="700">
 
+EG: Select the name which starts with 'Pr" and ends with 'ant' ans has atleast one character between them
+```sql
+SELECT name FROM t2 
+WHERE name LIKE "Pr_%ant";
+```
+
 
