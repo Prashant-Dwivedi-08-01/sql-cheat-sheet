@@ -239,3 +239,7 @@ FROM table1
 INNER JOIN table2
 ON table1.common_field = table2.common_field;
 ```
+2. NATURAL JOIN: The NATURAL JOIN is nothing but the rows with same values for the common attributes.
+```sql
+SELECT productName from t1 NATURAL JOIN t2
+```
