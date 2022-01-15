@@ -157,3 +157,11 @@ The GROUP BY Statement in SQL is used to arrange identical data into groups with
 * GROUP BY clause is used with the SELECT statement.
 * In the query, GROUP BY clause is placed after the WHERE clause.
 * In the query, GROUP BY clause is placed before ORDER BY clause if used any.
+* GROUP BY returns only one result per group of data.
+
+Example:
+```sql
+SELECT class, COUNT(name) FROM t2
+GROUP BY class
+```
+![image](https://user-images.githubusercontent.com/63506466/149610262-6e218c00-f8c6-4be0-ba1a-00573edf69ae.png)
