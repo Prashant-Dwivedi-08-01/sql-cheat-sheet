@@ -229,3 +229,13 @@ SELECT * FROM Customers
 WHERE Country IN (SELECT Country FROM Suppliers);
 
 ```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `JOINS`
+
+1. INNER JOIN: The INNER JOIN keyword selects records that have matching values in both tables.
+```sql
+SELECT table1.column1, table2.column2...
+FROM table1
+INNER JOIN table2
+ON table1.common_field = table2.common_field;
+```
