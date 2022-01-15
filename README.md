@@ -260,3 +260,36 @@ Output:
 ```sql
 SELECT productName from t1 NATURAL JOIN t2
 ```
+3. LEFT JOIN: The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.
+
+```sql
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+EXAMPLE:
+SELECT users.email FROM users
+LEFT JOIN passwords
+ON users.email = passwords.email
+
+Every thing from User table and common from User ans Passwords
+```
+
+4. RIGHT JOIN:The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
+```sql
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+
+5. SELF JOIN: A self join is a regular join, but the table is joined with itself.
+The following SQL statement matches customers that are from the same city:
+```sql
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+```
