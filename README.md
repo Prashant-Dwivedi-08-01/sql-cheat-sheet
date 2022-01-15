@@ -223,4 +223,9 @@ WHERE column_name IN (SELECT STATEMENT);
 EXAMPLE:
 SELECT * FROM Customers
 WHERE Country IN ('Germany', 'France', 'UK');
+
+EXAMPLE:
+SELECT * FROM Customers
+WHERE Country IN (SELECT Country FROM Suppliers);
+
 ```
