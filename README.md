@@ -165,3 +165,17 @@ SELECT class, COUNT(name) FROM t2
 GROUP BY class
 ```
 ![image](https://user-images.githubusercontent.com/63506466/149610262-6e218c00-f8c6-4be0-ba1a-00573edf69ae.png)
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `HAVING Clause`
+HAVING Clause utilized in SQL as a conditional Clause with GROUP BY Clause. This conditional clause returns rows where aggregate function results matched with given conditions only. It added in the SQL because WHERE Clause cannot be combined with aggregate results, so it has a different purpose. The primary purpose of the WHERE Clause is to deal with non-aggregated or individual records.
+
+HAVING Clause always utilized in combination with GROUP BY Clause.
+HAVING Clause restricts the data on the group records rather than individual records.
+WHERE and HAVING can be used in a single query.
+
+```sql
+SELECT class, COUNT(name) FROM t2
+GROUP BY class
+HAVING COUNT(name) < 9
+```
+![image](https://user-images.githubusercontent.com/63506466/149610380-9d89da05-d899-4eb8-b8c9-e04106c8a5bc.png)
