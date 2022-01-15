@@ -203,3 +203,24 @@ SELECT column_names
 FROM table_name
 WHERE column_name IS NULL;
 ```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `IN`
+* The IN operator allows you to specify multiple values in a WHERE clause.
+* The IN operator is a shorthand for multiple OR conditions.
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+
+OR
+
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+
+EXAMPLE:
+SELECT * FROM Customers
+WHERE Country IN ('Germany', 'France', 'UK');
+```
