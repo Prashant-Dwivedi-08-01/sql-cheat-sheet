@@ -179,3 +179,16 @@ GROUP BY class
 HAVING COUNT(name) < 9
 ```
 ![image](https://user-images.githubusercontent.com/63506466/149610380-9d89da05-d899-4eb8-b8c9-e04106c8a5bc.png)
+
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `UNION`
+The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+* Every SELECT statement within UNION must have the same number of columns
+* The columns must also have similar data types
+* The columns in every SELECT statement must also be in the same order
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+```
