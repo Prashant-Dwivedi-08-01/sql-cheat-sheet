@@ -187,8 +187,19 @@ The UNION operator is used to combine the result-set of two or more SELECT state
 * Every SELECT statement within UNION must have the same number of columns
 * The columns must also have similar data types
 * The columns in every SELECT statement must also be in the same order
+* The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL:
 ```sql
 SELECT column_name(s) FROM table1
 UNION
 SELECT column_name(s) FROM table2;
+```
+
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `NULL`
+It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
+
+We will have to use the IS NULL and IS NOT NULL operators instead.
+```sql
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
 ```
