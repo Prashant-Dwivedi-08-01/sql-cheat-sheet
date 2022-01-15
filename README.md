@@ -238,7 +238,24 @@ SELECT table1.column1, table2.column2...
 FROM table1
 INNER JOIN table2
 ON table1.common_field = table2.common_field;
+
+EXAMPLE:
+SELECT users.email, passwords.name FROM users
+INNER JOIN passwords
+ON users.email = passwords.email
 ```
+Password: 
+
+![image](https://user-images.githubusercontent.com/63506466/149613573-86b7692f-8e52-4996-ae83-96ecc87860f8.png)
+
+Users: 
+
+![image](https://user-images.githubusercontent.com/63506466/149613585-1d13a8f4-1fb9-4f00-96ac-66318f157f30.png)
+
+Output: 
+
+![image](https://user-images.githubusercontent.com/63506466/149613560-ecc7840c-66af-444f-8e5b-579b9ef03809.png)
+
 2. NATURAL JOIN: The NATURAL JOIN is nothing but the rows with same values for the common attributes. After doing cross product of two tables we see which rows have the same values for common attributes on both the tables
 ```sql
 SELECT productName from t1 NATURAL JOIN t2
