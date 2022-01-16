@@ -23,6 +23,13 @@ Incrementing the date by some days
 UPDATE bank_holiday
 SET holiday = DATE_ADD(holiday, INTERVAL 3 DAY)
 ```
+
+4. Using aggregate functionsMAX< COUNT, MIN, AVG, SUM: Use the nested query
+Example: Query the name of the player with max runs
+```sql
+SELECT player_name FROM cricket_1
+WHERE runs = ( SELECT MAX(runs) FROM cricket_1)
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
