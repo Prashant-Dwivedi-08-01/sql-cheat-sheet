@@ -6,6 +6,13 @@ SELECT CHAR_LENGTH(product)
 FROM blank_details W
 HERE product='paycard';
 ```
+
+2. UPPER and LOWER: Used to change the case of any string
+```sql
+SELECT UPPER(product) FROM blank_details
+
+// Gives the name of Products in Upper case
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
