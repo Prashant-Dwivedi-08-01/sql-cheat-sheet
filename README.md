@@ -30,6 +30,18 @@ Example: Query the name of the player with max runs
 SELECT player_name FROM cricket_1
 WHERE runs = ( SELECT MAX(runs) FROM cricket_1)
 ```
+5. Select all the columns from player table for the player with second highest runs
+```sql
+SELECT * FROM cricket_1
+WHERE runs = (
+    SELECT MAX(runs) as MAX_RUN_SECOND FROM cricket_1
+	  WHERE runs <> (SELECT MAX(runs) FROM cricket_1)
+)
+
+SAME QURY CAN BE DONE BY ORDERBY DESC WITH LIMIT X OFFSET Y ( Given only X rows after first Y rows)
+SELECT * FROM cricket_1
+ORDER BY runs DESC LIMIT 1 OFFSET 1;
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
