@@ -13,6 +13,16 @@ SELECT UPPER(product) FROM blank_details
 
 // Gives the name of Products in Upper case
 ```
+
+3. DATE
+```sql
+Entering the current date
+INSERT INTO bank_holiday(holiday_date) VALUES(CURRENT_DATE())
+
+Incrementing the date by some days
+UPDATE bank_holiday
+SET holiday = DATE_ADD(holiday, INTERVAL 3 DAY)
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
