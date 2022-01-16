@@ -1,4 +1,11 @@
 # sql-cheat-sheet
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `MISSCC`
+1. CHAR_LENGTH function: Returns the length of character in a particular string
+```sql
+SELECT CHAR_LENGTH(product) 
+FROM blank_details W
+HERE product='paycard';
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
