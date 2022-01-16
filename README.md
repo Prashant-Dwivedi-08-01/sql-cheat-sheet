@@ -1,5 +1,5 @@
 # sql-cheat-sheet
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `MISSCC`
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `MISCELLANEOUS`
 1. CHAR_LENGTH function: Returns the length of character in a particular string
 ```sql
 SELECT CHAR_LENGTH(product) 
