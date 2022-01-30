@@ -289,7 +289,7 @@ ON users.email = passwords.email
 ```
 Password: 
 
-![image](https://user-images.githubusercontent.com/63506466/149613573-86b7692f-8e52-4996-ae83-96ecc87860f8.png)
+![image](https://user-images.githubusercontent.com/63506466/151703898-11cbffaa-a62e-48c5-a824-72f49fa904e3.png)
 
 Users: 
 
@@ -332,7 +332,16 @@ SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
+
+SELECT * 
+FROM users
+RIGHT JOIN passwords
+ON users.email = passwords.email
 ```
+![image](https://user-images.githubusercontent.com/63506466/151703872-a0238056-a153-461c-aae4-3402d27bbc48.png)
+
+
+
 
 5. SELF JOIN: A self join is a regular join, but the table is joined with itself.
 The following SQL statement matches customers that are from the same city:
