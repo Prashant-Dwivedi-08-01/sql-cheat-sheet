@@ -312,12 +312,15 @@ LEFT JOIN table2
 ON table1.column_name = table2.column_name;
 
 EXAMPLE:
-SELECT users.email FROM users
-LEFT JOIN passwords
+SELECT * 
+FROM users
+INNER JOIN passwords
 ON users.email = passwords.email
 
-Every thing from User table and common from User ans Passwords
+HERE, USERS IS LEFT TABLE AND PASSWORDS IS RIGHT TABLE. 
+HERE FOR 
 ```
+![image](https://user-images.githubusercontent.com/63506466/151703550-3c0c9eb5-a101-479f-93a9-ece6ea653f80.png)
 
 4. RIGHT JOIN:The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
 ```sql
