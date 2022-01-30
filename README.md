@@ -314,13 +314,17 @@ ON table1.column_name = table2.column_name;
 EXAMPLE:
 SELECT * 
 FROM users
-INNER JOIN passwords
+LEFT JOIN passwords
 ON users.email = passwords.email
 
 HERE, USERS IS LEFT TABLE AND PASSWORDS IS RIGHT TABLE. 
-HERE FOR 
+HERE FOR EACH EMAIL OF LEFT TABLE(USERS) IT FINDS SAME EMAIL IN RIGHT TABLE(PASSWORDS).
+ALL THE MATCHING IS RETURNED.
+EXAMPLE: FOR `iit2016107@iiita.ac.in` WE HAVE MORE THAN ONE MATCHING IN PASSWORD, THEN BOTH THE MATCHINGS ARE RETUNED.SEE IMAGE
+IF NOT MATCHING IS FOUND WE SEE NULL 
 ```
-![image](https://user-images.githubusercontent.com/63506466/151703550-3c0c9eb5-a101-479f-93a9-ece6ea653f80.png)
+![image](https://user-images.githubusercontent.com/63506466/151703694-a281a55b-576c-4f8c-ac10-b49d411a3f95.png)
+
 
 4. RIGHT JOIN:The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
 ```sql
