@@ -207,6 +207,7 @@ Example:
 SELECT class, COUNT(name) FROM t2
 GROUP BY class
 ```
+
 ![image](https://user-images.githubusercontent.com/63506466/149610262-6e218c00-f8c6-4be0-ba1a-00573edf69ae.png)
 
 ## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `HAVING Clause`
@@ -223,6 +224,24 @@ HAVING COUNT(name) < 9
 ```
 ![image](https://user-images.githubusercontent.com/63506466/149610380-9d89da05-d899-4eb8-b8c9-e04106c8a5bc.png)
 
+## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `Order of Execution`
+
+![image](https://user-images.githubusercontent.com/63506466/151922014-903ada50-4e80-4563-99d1-208a81a60459.png)
+
+**EXAMPLE**
+![image](https://user-images.githubusercontent.com/63506466/151922117-b2fad5ce-0fa6-48a9-ac1f-d0cf15220f5b.png)
+
+Query:
+```sql
+SELECT id, name FROM instructor WHERE salary>40000
+GROUP BY id,name HAVING count(DISTINCT university) > 1
+```
+```
+1. Here, first that id and name is selected whose salary is greater than 40K
+2. From the filtered result, the grouping is then done using id and name. Here same id ans name pair are grouped together
+3. From this group, we then filter that group(not row) which has the distinct university count greater than 1.
+4. Groups after this filtering is returned. The first row of the selected groups are returned
+```
 
 ## ![#f04c65](https://via.placeholder.com/15/f03c15/000000?text=+)  `UNION`
 The UNION operator is used to combine the result-set of two or more SELECT statements.
