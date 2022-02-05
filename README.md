@@ -201,7 +201,15 @@ The GROUP BY Statement in SQL is used to arrange identical data into groups with
 * In the query, GROUP BY clause is placed after the WHERE clause.
 * In the query, GROUP BY clause is placed before ORDER BY clause if used any.
 * GROUP BY returns only one result per group of data.
+We use Aggregate functions in select while using group by as group by makes group and we cant return select value from a group: 
+For Example: If we have grouped students table by Class then it is more meaningful to find the AVG(age) and not the age, as each group will be having lot of students and when you ask just the age then it is nonsense as it is not clear to give which student's age we asking?
+```
+Not meaning full, as here we get the first result of each group i.e age of just the first student
+SELECT age FROM std GROUP BY age
 
+Meaningful Query:
+SELECT AVG(age) FROM std GROUP BY age
+```
 Example:
 ```sql
 SELECT class, COUNT(name) FROM t2
