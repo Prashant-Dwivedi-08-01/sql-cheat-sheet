@@ -42,6 +42,22 @@ SAME QURY CAN BE DONE BY ORDERBY DESC WITH LIMIT X OFFSET Y ( Given only X rows 
 SELECT * FROM cricket_1
 ORDER BY runs DESC LIMIT 1 OFFSET 1;
 ```
+
+6. ANY and ALL
+```
+The ANY operator:
+
+returns a boolean value as a result
+returns TRUE if ANY of the subquery values meet the condition
+ANY means that the condition will be true if the operation is true for any of the values in the range.
+
+The ALL operator:
+
+returns a boolean value as a result
+returns TRUE if ALL of the subquery values meet the condition
+is used with SELECT, WHERE and HAVING statements
+ALL means that the condition will be true only if the operation is true for all values in the range. 
+```
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)  `ALTER TABLE (DDL)`
 
 ### ALTER TABLE - ADD Column
