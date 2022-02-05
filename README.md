@@ -228,6 +228,9 @@ HAVING COUNT(name) < 9
 
 ![image](https://user-images.githubusercontent.com/63506466/151922014-903ada50-4e80-4563-99d1-208a81a60459.png)
 
+![image](https://user-images.githubusercontent.com/63506466/152645794-71289e46-6f1b-4e66-85c1-c560ba1a9df8.png)
+
+
 **EXAMPLE**
 
 ![image](https://user-images.githubusercontent.com/63506466/151922117-b2fad5ce-0fa6-48a9-ac1f-d0cf15220f5b.png)
